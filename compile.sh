@@ -1,6 +1,8 @@
 shopt -s nullglob
 shopt -s globstar
 
+mkdir workdir
+
 echo -e "\n#### Compiling ####\n"
 
 find code -name '*' -type d -print0 | xargs -0 -I file mkdir workdir/file
