@@ -1,1 +1,0 @@
-#define CMD_EXIT "exit"
