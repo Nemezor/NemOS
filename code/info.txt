@@ -1,0 +1,22 @@
+function naming:
+	filename_functionname();
+
+example:
+	file: memory.c (function definition in memory.h of course)
+	function: malloc(int amount);
+	whole name:
+		memory_malloc(int amount);
+
+functions that interface ASM and C are prefixed with "__"
+
+example:
+	file: setup.c (function definition in setup.h)
+	function: kernel_entry();
+	whole name:
+		__setup_kernel_entry();
+
+
+
+headers may only be included in headers, NEVER #include in a .c file!
+
+for once-only header checking use the format HEADER_filename (without the .h) in all caps
